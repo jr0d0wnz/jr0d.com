@@ -1,65 +1,99 @@
-/* Reset some default styles */
-body, ul {
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
+/* primary styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #30001a; /* deep purple-red */
+    color: #ff007d; /* neon pink */
 }
 
-ul {
-    list-style: none;
+h2, .neon {
+    color: #ff00ff; /* neon magenta */
 }
 
 a {
-    text-decoration: none;
+    color: #ff007d; /* neon pink */
+    text-decoration: underline;
 }
 
-/* Basic styling for header, nav, main, and footer */
-header {
-    background-color: #333;
-    color: #fff;
+/* block alpha */
+.block-alpha {
+    padding-top: 38vh;
     text-align: center;
-    padding: 1rem;
+    background-color: #32001c; /* slightly darker purple-red */
 }
 
-header h1 {
-    margin-bottom: 0.5rem;
+.block-alpha p {
+    font-size: 1.2rem;
+    padding-bottom: 12px;
+    margin: 2px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
+.block-alpha h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
 }
 
-nav ul li {
-    margin-right: 1rem;
+.block-alpha a {
+    font-size: 1.6rem;
+    padding: 12px;
 }
 
-nav ul li:last-child {
-    margin-right: 0;
+/* block beta */
+.block-beta {
+    padding-top: 12vh;
+    width: 68%;
+    background-color: #32001c; /* slightly darker purple-red */
 }
 
-nav ul li a {
-    color: #fff;
+.block-beta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
 }
 
-main {
-    padding: 1rem;
+.block-beta p {
+    font-size: 1.2rem;
+    padding-bottom: 12px;
+    margin: 2px;
 }
 
-section {
-    margin-bottom: 2rem;
+.block-beta a {
+    display: block;
+    padding: 6px;
+    font-size: 1.3rem;
+    padding-left: 2px;
+    width: 102px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+/* transitions / helpers */
+.block-beta a:hover,
+.block-alpha a:hover {
+    color: #ff00ff; /* neon magenta */
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+.neon:hover {
+    position: relative;
+    padding-left: 12px;
+}
+
+/* responsive settings */
+@media(max-width:775px) {
+    .grid-alpha {
+        grid-template-columns: 1fr;
+    }
+
+    .block-alpha {
+        padding: 4px;
+        padding-top: 4.8rem;
+    }
+
+    .block-beta {
+        padding: 4px;
+        padding-left: 1.7rem;
+        padding-top: 2.2rem;
+    }
 }
