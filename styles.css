@@ -28,6 +28,7 @@ a {
 .block-alpha {
     padding-top: 40vh;
     text-align: center;
+    min-width: 84px; /* Add min-width property and set the desired minimum width */
 }
 
 .block-alpha p {
@@ -53,6 +54,7 @@ a {
     display: block; /* Add display property */
     word-wrap: break-word; /* Add word-wrap property */
     white-space: normal; /* Add white-space property */
+    text-align: center;
 }
 
 .block-beta h2 {
