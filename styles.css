@@ -50,6 +50,9 @@ a {
 .block-beta {
     padding-top: 10vh;
     width: 70%;
+    display: block; /* Add display property */
+    word-wrap: break-word; /* Add word-wrap property */
+    white-space: normal; /* Add white-space property */
 }
 
 .block-beta h2 {
