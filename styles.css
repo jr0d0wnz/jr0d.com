@@ -28,7 +28,6 @@ a {
 .block-alpha {
     padding-top: 40vh;
     text-align: center;
-    background-color: #32001c; /* slightly darker purple-red */
 }
 
 .block-alpha p {
@@ -51,7 +50,6 @@ a {
 .block-beta {
     padding-top: 10vh;
     width: 70%;
-    background-color: #32001c; /* slightly darker purple-red */
 }
 
 .block-beta h2 {
