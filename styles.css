@@ -16,7 +16,7 @@ body {
 }
 
 h2, .highlight {
-    color: #ff00ff; /* neon magenta */
+    color: #ffaa80; /* neon magenta */
 }
 
 a {
@@ -26,9 +26,9 @@ a {
 
 /* Block Alpha Styles */
 .block-alpha {
-    padding-top: 40vh;
+    padding-top: 21vh;
     text-align: center;
-    min-width: 84px; /* Add min-width property and set the desired minimum width */
+    min-width: 210px; /* Add min-width property and set the desired minimum width */
 }
 
 .block-alpha p {
@@ -50,11 +50,10 @@ a {
 /* Block Beta Styles */
 .block-beta {
     padding-top: 10vh;
-    width: 70%;
+    width: 50%;
     display: block; /* Add display property */
     word-wrap: break-word; /* Add word-wrap property */
-    white-space: pre; /* Add white-space property */
-    text-align: center;
+    white-space: normal; /* Add white-space property */
 }
 
 .block-beta h2 {
@@ -79,19 +78,20 @@ a {
 /* Hover Styles */
 .block-beta a:hover {
     font-size: 1.3rem;
-    color: #ff00ff; /* neon magenta */
+    color: #ffaa80; /* neon magenta */
     cursor: pointer;
     transition: 0.2s;
 }
 
 .block-alpha a:hover {
-    color: #ff00ff; /* neon magenta */
+    color: #ffaa80; /* neon magenta */
     cursor: pointer;
     transition: 0.3s;
 }
 
 .neon:hover {
     position: relative;
+    color: #ffaa80; /* neon magenta */
     padding-left: 10px;
 }
 
