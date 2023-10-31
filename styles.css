@@ -95,6 +95,11 @@ a {
     padding-left: 10px;
 }
 
+.wizard:hover {
+    position: relative;
+    color: #ffaa80; /* neon magenta */
+}
+
 /* Responsive Styles */
 @media(max-width:775px) {
     .grid {
