@@ -6,82 +6,80 @@
     grid-template-columns: repeat(2,1fr);
 }
 
-/* primary styles */
+/* Base Styles */
 body {
-    margin: 5px;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #30001a; /* deep purple-red */
-    color: #ff007d; /* neon pink */
+    background-color: #101214;
+    color: #7A7C80;
 }
 
-h2, .neon {
-    color: #ff00ff; /* neon magenta */
+h2, .highlight {
+    color: #fff;
 }
 
 a {
-    color: #ff007d; /* neon pink */
-    text-decoration: underline;
+    color: #7A7C80;
+    text-decoration: none;
 }
 
-/* block alpha */
-.section-1 {
-    padding-top: 38vh;
+/* Block Alpha Styles */
+.block-alpha {
+    padding-top: 40vh;
     text-align: center;
-    background-color: #32001c; /* slightly darker purple-red */
 }
 
-.section-1 p {
-    font-size: 1.2rem;
-    padding-bottom: 12px;
-    margin: 2px;
+.block-alpha p {
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin: 0;
 }
 
-.section-1 h2 {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
+.block-alpha h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
 }
 
-.section-1 a {
-    font-size: 1.6rem;
-    padding: 12px;
+.block-alpha a {
+    font-size: 1.5rem;
+    padding: 10px;
 }
 
-/* block beta */
-.section-2 {
-    padding-top: 12vh;
-    width: 68%;
-    background-color: #32001c; /* slightly darker purple-red */
+/* Block Beta Styles */
+.block-beta {
+    padding-top: 10vh;
+    width: 70%;
 }
 
-.section-2 h2 {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
+.block-beta h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
 }
 
-.section-2 p {
-    font-size: 1.2rem;
-    padding-bottom: 12px;
-    margin: 2px;
+.block-beta p {
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin: 0;
 }
 
-.section-2 a {
+.block-beta a {
     display: block;
-    padding: 6px;
-    font-size: 1.3rem;
-    padding-left: 2px;
-    width: 102px;
+    padding: 5px;
+    font-size: 1.2rem;
+    padding-left: 0;
+    width: 100px;
 }
 
-/* hovers */
-.section-2 a:hover {
+/* Hover Styles */
+.block-beta a:hover {
     font-size: 1.3rem;
     color: #ff00ff; /* neon magenta */
     cursor: pointer;
     transition: 0.2s;
 }
 
-.section-1 a:hover {
+.block-alpha a:hover {
     color: #ff00ff; /* neon magenta */
     cursor: pointer;
     transition: 0.3s;
@@ -89,24 +87,23 @@ a {
 
 .neon:hover {
     position: relative;
-    padding-left: 12px;
+    padding-left: 10px;
 }
 
-
-/* settings */
+/* Responsive Styles */
 @media(max-width:775px) {
-    .grid-2 {
+    .grid {
         grid-template-columns: 1fr;
     }
 
-    .section-1 {
-        padding: 4px;
-        padding-top: 4.8rem;
+    .block-alpha {
+        padding: 0;
+        padding-top: 5rem;
     }
 
-    .section-2 {
-        padding: 4px;
-        padding-left: 1.7rem;
-        padding-top: 2.2rem;
+    .block-beta {
+        padding: 0;
+        padding-left: 1.5rem;
+        padding-top: 2rem;
     }
 }
