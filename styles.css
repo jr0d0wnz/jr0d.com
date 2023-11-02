@@ -1,34 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+mono');
 
-/* global grid */
-.grid-2 {
-    display: grid;
-    grid-template-columns: 30% 70%;
-}
-
 /* Base Styles */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Mono', monospace;
-    background-color: #30001a; /* deep purple-red */
-    color: #ff007d; /* neon pink */
+    background-color: #000000; /* deep purple-red */
+    color: #00BFFF; /* neon pink */ /* To prevent scrolling if the image is larger than the viewport */
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    z-index: -1;
 }
 
 h2, .highlight {
-    color: #ffaa80; /* neon magenta */
+    color: #00BFFF; /* neon magenta */
 }
 
 a {
-    color: #ff007d; /* neon pink */
+    color: #00BFFF; /* neon pink */
     text-decoration: none;
 }
 
 /* Block Alpha Styles */
 .block-alpha {
-    padding-top: 21vh;
+    padding-top: 34vh;
     text-align: center;
     min-width: 210px; /* Add min-width property and set the desired minimum width */
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 630px;
 }
 
 .block-alpha p {
@@ -47,84 +59,24 @@ a {
     padding: 10px;
 }
 
-/* Block Beta Styles */
-.block-beta {
-    padding-top: 10vh;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    display: block; /* Add display property */
-    word-wrap: break-word; /* Add word-wrap property */
-    white-space: normal; /* Add white-space property */
-}
-
-.block-beta h2 {
-    font-size: 1.7rem;
-    margin-bottom: 10px;
-}
-
-.block-beta p {
-    font-size: 1.1rem;
-    padding-bottom: 10px;
-    margin: 0;
-}
-
-.block-beta a {
-    display: block;
-    padding: 5px;
-    font-size: 1.2rem;
-    padding-left: 0;
-    width: 100px;
-}
-
 /* Hover Styles */
-.block-beta a:hover {
-    font-size: 1.3rem;
-    color: #ffaa80; /* neon magenta */
-    cursor: pointer;
-    transition: 0.2s;
-}
-
 .block-alpha a:hover {
-    color: #ffaa80; /* neon magenta */
+    color: #001F3F;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .neon:hover {
     position: relative;
-    color: #ffaa80; /* neon magenta */
+    color: #880808;
     padding-left: 10px;
 }
 
 .wizard:hover {
     position: relative;
-    color: #ffaa80; /* neon magenta */
+    color: #00BFFF;
 }
 
 .justified-text {
     text-align: justify;
-}
-
-/* Responsive Styles */
-@media(max-width:766px) {
-    .grid-2 {
-        grid-template-columns: 100%;
-    }
-
-    .block-alpha {
-        padding: 0;
-        padding-left: 1.6rem;
-        padding-right: 1.6rem;
-        padding-top: 5rem;
-        text-align: center;
-        word-wrap: break-word; /* Add word-wrap property */
-    }
-
-    .block-beta {
-        padding: 0;
-        padding-left: 1.6rem;
-        padding-right: 1.6rem;
-        padding-top: 2rem;
-        word-wrap: break-word; /* Add word-wrap property */
-    }
 }
