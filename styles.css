@@ -51,10 +51,11 @@ a {
 .block-beta {
     padding-top: 10vh;
     padding-right: 2rem;
-    width:55%;
+    padding-left: 2rem;
     display: block; /* Add display property */
     word-wrap: break-word; /* Add word-wrap property */
     white-space: normal; /* Add white-space property */
+    max-width: 420px;
 }
 
 .block-beta h2 {
@@ -106,7 +107,7 @@ a {
 }
 
 /* Responsive Styles */
-@media(max-width:768px) {
+@media(max-width:766px) {
     .grid-2 {
         grid-template-columns: 1fr;
     }
@@ -117,7 +118,6 @@ a {
         padding-right: 1.6rem;
         padding-top: 5rem;
         text-align: center;
-        width: 30%;
     }
 
     .block-beta {
@@ -125,6 +125,5 @@ a {
         padding-left: 1.6rem;
         padding-right: 1.6rem;
         padding-top: 2rem;
-        width: 30%;
     }
 }
