@@ -113,6 +113,7 @@ a {
     .block-alpha {
         padding: 0;
         padding-left: 1.6rem;
+        padding-right: 1.6rem;
         padding-top: 5rem;
         text-align: center;
         width: 30%;
@@ -121,6 +122,7 @@ a {
     .block-beta {
         padding: 0;
         padding-left: 1.6rem;
+        padding-right: 1.6rem;
         padding-top: 2rem;
         width: 30%;
     }
