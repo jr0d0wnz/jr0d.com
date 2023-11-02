@@ -55,7 +55,7 @@ a {
     display: block; /* Add display property */
     word-wrap: break-word; /* Add word-wrap property */
     white-space: normal; /* Add white-space property */
-    max-width: 420px;
+    min-width: 333px;
 }
 
 .block-beta h2 {
