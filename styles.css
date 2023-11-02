@@ -50,6 +50,7 @@ a {
 /* Block Beta Styles */
 .block-beta {
     padding-top: 10vh;
+    padding-right: 2rem;
     width:55%;
     display: block; /* Add display property */
     word-wrap: break-word; /* Add word-wrap property */
