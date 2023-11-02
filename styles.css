@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+mono');
 
 /* global grid */
 .grid-2 {
@@ -10,7 +10,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     background-color: #30001a; /* deep purple-red */
     color: #ff007d; /* neon pink */
 }
@@ -102,7 +102,7 @@ a {
 
 /* Responsive Styles */
 @media(max-width:775px) {
-    .grid {
+    .grid-2 {
         grid-template-columns: 1fr;
     }
 
